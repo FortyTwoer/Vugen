@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>CancelTicketsVugenScript</ScriptName>
+  <Protocol>Web - HTTP/HTML</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="CancelTicketsVugenScript.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="DfeConfig\" Filter="4" />
+    <FileEntry Name="CancelTicketsVugenScript.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="combined_CancelTicketsVugenScript.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="69778251440.idx" Filter="1" />
+    <FileEntry Name="91096561440.idx" Filter="1" />
+    <FileEntry Name="9109656144_2uS.295.idx" Filter="1" />
+    <FileEntry Name="9109656144_2XF.723.idx" Filter="1" />
+    <FileEntry Name="9109656144_48L.809.idx" Filter="1" />
+    <FileEntry Name="9109656144_88B.767.idx" Filter="1" />
+    <FileEntry Name="9109656144_9pV.345.idx" Filter="1" />
+    <FileEntry Name="9109656144_9tk.771.idx" Filter="1" />
+    <FileEntry Name="9109656144_aqL.561.idx" Filter="1" />
+    <FileEntry Name="9109656144_ATl.335.idx" Filter="1" />
+    <FileEntry Name="9109656144_C1I.415.idx" Filter="1" />
+    <FileEntry Name="9109656144_ciW.823.idx" Filter="1" />
+    <FileEntry Name="9109656144_DcA.365.idx" Filter="1" />
+    <FileEntry Name="9109656144_Hqy.905.idx" Filter="1" />
+    <FileEntry Name="9109656144_IRR.323.idx" Filter="1" />
+    <FileEntry Name="9109656144_jBH.393.idx" Filter="1" />
+    <FileEntry Name="9109656144_JYb.321.idx" Filter="1" />
+    <FileEntry Name="9109656144_lFv.849.idx" Filter="1" />
+    <FileEntry Name="9109656144_MB2.113.idx" Filter="1" />
+    <FileEntry Name="9109656144_myC.511.idx" Filter="1" />
+    <FileEntry Name="9109656144_NWE.375.idx" Filter="1" />
+    <FileEntry Name="9109656144_oVu.17.idx" Filter="1" />
+    <FileEntry Name="9109656144_p1H.401.idx" Filter="1" />
+    <FileEntry Name="9109656144_p4g.815.idx" Filter="1" />
+    <FileEntry Name="9109656144_vyz.583.idx" Filter="1" />
+    <FileEntry Name="9109656144_wEd.521.idx" Filter="1" />
+    <FileEntry Name="9109656144_wZ6.245.idx" Filter="1" />
+    <FileEntry Name="9109656144_Xfe.67.idx" Filter="1" />
+    <FileEntry Name="9109656144_Xwz.49.idx" Filter="1" />
+    <FileEntry Name="9109656144_YwY.499.idx" Filter="1" />
+    <FileEntry Name="9109656144_YYK.715.idx" Filter="1" />
+    <FileEntry Name="9109656144_Z0n.877.idx" Filter="1" />
+    <FileEntry Name="9109656144_zgo.17.idx" Filter="1" />
+    <FileEntry Name="9109656144_zyq.343.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CancelTicketsVugenScript.c.pickle" Filter="1" />
+    <FileEntry Name="CancelTicketsVugenScript.ci" Filter="1" />
+    <FileEntry Name="CancelTicketsVugenScript.prm.bak" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="data\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>
