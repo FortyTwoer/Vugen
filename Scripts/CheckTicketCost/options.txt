@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\1οκ\Desktop\CheckTicketCost
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\1οκ\desktop\checkticketcost\\logfile.log
+c:\users\1οκ\desktop\checkticketcost\\combined_CheckTicketCostVugenScript.c
+c:\users\1οκ\desktop\checkticketcost\\pre_cci.c
