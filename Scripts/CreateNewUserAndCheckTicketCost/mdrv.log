@@ -1,0 +1,725 @@
+Virtual User Script started at: 19.09.2020 16:07:34
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (ноя 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\1пк\Desktop\CreateNewUserAndCheckTicketCostVugenScript\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Transaction "UC5_SignUpAndCheckTicketsPrice" started.
+Action.c(5): Notify: Transaction "gotosite" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(24): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(28): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(28): t=211ms: 299-byte response headers for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:34 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Last-Modified: Mon, 27 May 2013 11:20:22 GMT\r\n
+Action.c(28):     ETag: "1500000006c8df-16e-4ddb1559ac980"\r\n
+Action.c(28):     Accept-Ranges: bytes\r\n
+Action.c(28):     Content-Length: 366\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Content-Type: text/html\r\n
+Action.c(28):     \r\n
+Action.c(28): t=218ms: 366-byte response body for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
+Action.c(28):     <HTML>\n
+Action.c(28):     <HEAD>\n
+Action.c(28):     <title>Web Tours</title>\n
+Action.c(28):     <frameset rows = "65,*" border="1" bordercolor="#E0E7F1">\n
+Action.c(28):     <frame name="header" src="header.html" scrolling="no" noresize="noresize" marginheight="2"
+Action.c(28):      marginwidth="2"/>\n
+Action.c(28):     <frame name="body" src="/cgi-bin/welcome.pl?signOff=true" scrolling="auto" noresize="nores
+Action.c(28):     ize" marginheight="2" marginwidth="2" />\n
+Action.c(28):     </frameset>\n
+Action.c(28):     </HEAD>\n
+Action.c(28):     </HTML>\n
+Action.c(28):     \n
+Action.c(28): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(28): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(28): t=230ms: 299-byte response headers for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Last-Modified: Mon, 27 May 2013 11:20:22 GMT\r\n
+Action.c(28):     ETag: "1000000006c8ad-2c6-4ddb1559ac980"\r\n
+Action.c(28):     Accept-Ranges: bytes\r\n
+Action.c(28):     Content-Length: 710\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Content-Type: text/html\r\n
+Action.c(28):     \r\n
+Action.c(28): t=232ms: 710-byte response body for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
+Action.c(28):     <!DOCTYPE html>\n
+Action.c(28):     <HTML xmlns="http://www.w3.org/1999/xhtml">\n
+Action.c(28):     <HEAD></HEAD>\n
+Action.c(28):     <BODY bgcolor="#003366" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">\n
+Action.c(28):     \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
+Action.c(28):     bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \n
+Action.c(28):     \t\t<table width="100%" border="0" cellspacing="0" cellpadding="0">\n
+Action.c(28):     \t\t\t<tr>\n
+Action.c(28):     \t\t\t\t<td align="left" valign="middle" width="50%"><img src="images/hp_logo.png" alt="" 
+Action.c(28):     height="45" width="69" align="absmiddle" border="0"/><img src="images/webtours.png" alt=""
+Action.c(28):      height="45" width="130" align="absmiddle" border="0"/></td>\n
+Action.c(28):     \t\t\t\t<td align="right"></td>\n
+Action.c(28):     \t\t\t\t<td></td>\n
+Action.c(28):     \t\t\t</tr>\n
+Action.c(28):     \t\t</table>\n
+Action.c(28):     \t</BODY>\n
+Action.c(28):     </HTML>
+Action.c(28): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(28): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(28): t=284ms: 298-byte response headers for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
+Action.c(28):     ETag: "2400000006c8c6-259-4b654c052c2c0"\r\n
+Action.c(28):     Accept-Ranges: bytes\r\n
+Action.c(28):     Content-Length: 601\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Content-Type: image/png\r\n
+Action.c(28):     \r\n
+Action.c(28): t=285ms: 601-byte response body for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
+Action.c(28): t=287ms: 301-byte response headers for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Last-Modified: Mon, 04 Nov 2013 13:47:02 GMT\r\n
+Action.c(28):     ETag: "1d00000006c8de-105b-4ea5a26938180"\r\n
+Action.c(28):     Accept-Ranges: bytes\r\n
+Action.c(28):     Content-Length: 4187\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Content-Type: image/png\r\n
+Action.c(28):     \r\n
+Action.c(28): t=288ms: 4187-byte response body for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+Action.c(28): t=332ms: 328-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Set-Cookie: MSO=SID&1600520855; path=/\r\n
+Action.c(28):     Set-Cookie: MTUserInfo=; path=/; expires=Fri, 18-Sep-2020 13:07:35 GMT\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Transfer-Encoding: chunked\r\n
+Action.c(28):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(28):     \r\n
+Action.c(28): t=333ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(28):     2ae\r\n
+Action.c(28): t=334ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(28):     \r\n
+Action.c(28): t=334ms: 686-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(28):     <!-- \n
+Action.c(28):      A Session ID has been created and loaded into a cookie called MSO.\n
+Action.c(28):      Also, the server options have been loaded into the cookie called\n
+Action.c(28):      MSO as well.  The server options can be set via the Admin page.\n
+Action.c(28):      --->\n
+Action.c(28):     \n
+Action.c(28):     <html>\n
+Action.c(28):     <title>Web Tours</title>\n
+Action.c(28):        <!-- Frame Set -->\n
+Action.c(28):        <frameset cols="160,*" border="1" frameborder="1">\n
+Action.c(28):           <!-- Navigation Frame -->\n
+Action.c(28):           <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" \n
+Action.c(28):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(28):           <!-- Home Frame -->\n
+Action.c(28):           <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" \n
+Action.c(28):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(28):        </frameset>\n
+Action.c(28):     </html>\n
+Action.c(28):     \n
+Action.c(28):     </body>\n
+Action.c(28):     </html>
+Action.c(28): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(28): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(28): t=336ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+Action.c(28):     0\r\n
+Action.c(28):     \r\n
+Action.c(28): t=344ms: 299-byte response headers for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Last-Modified: Mon, 27 May 2013 11:20:22 GMT\r\n
+Action.c(28):     ETag: "1200000006c8ae-551-4ddb1559ac980"\r\n
+Action.c(28):     Accept-Ranges: bytes\r\n
+Action.c(28):     Content-Length: 1361\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Content-Type: text/html\r\n
+Action.c(28):     \r\n
+Action.c(28): t=345ms: 1361-byte response body for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
+Action.c(28):     <HTML>\n
+Action.c(28):     <HEAD>\n
+Action.c(28):     \t<title>Web Tours</title>\n
+Action.c(28):     </HEAD>\n
+Action.c(28):     <style>\n
+Action.c(28):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(28):     \tH1 {font-family: tahoma; font-size : 22pt; color: #003366}\n
+Action.c(28):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+Action.c(28):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(28):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+Action.c(28):     N: none}\n
+Action.c(28):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+Action.c(28):     CORATION: underline}\n
+Action.c(28):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(28):     </style>\n
+Action.c(28):     <body bgcolor="#e0e7f1">\n
+Action.c(28):     <BR/>\n
+Action.c(28):     <BR/>\n
+Action.c(28):     <BR/>\n
+Action.c(28):     <br/>\n
+Action.c(28):     <table border="0">\n
+Action.c(28):     <tr><td></td></tr>\n
+Action.c(28):     <TR><TD></TD></TR>\n
+Action.c(28):     <TR><TD>\n
+Action.c(28):     <blockquote>\n
+Action.c(28):     <H1><b>Web Tours</b></H1>\n
+Action.c(28):     Welcome to the Web Tours site.\n
+Action.c(28):     <br/>\n
+Action.c(28):     To make reservations,please enter your account information to the left.\n
+Action.c(28):     <br/>\n
+Action.c(28):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
+Action.c(28):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
+Action.c(28):     <br/>\n
+Action.c(28):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
+Action.c(28):     tration</b></A> link.\n
+Action.c(28):     <br/><br/><br/><br/><br/><br/>\n
+Action.c(28):     <br/><small>\n
+Action.c(28):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
+Action.c(28):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
+Action.c(28):     </small>\n
+Action.c(28):     </blockquote></TD>\n
+Action.c(28):     <TD></TD></TR>\n
+Action.c(28):     </table>\n
+Action.c(28):     </body>\n
+Action.c(28):     </HTML>\n
+Action.c(28): t=389ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Expires: Fri, 18 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=98\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Transfer-Encoding: chunked\r\n
+Action.c(28):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(28):     \r\n
+Action.c(28): t=391ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(28):     5d2\r\n
+Action.c(28): t=391ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(28):     \r\n
+Action.c(28): t=391ms: 1490-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(28):     <!DOCTYPE html\n
+Action.c(28):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(28):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(28):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(28):     <head>\n
+Action.c(28):     <title>Web Tours Navigation Bar</title>\n
+Action.c(28):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(28):     </head>\n
+Action.c(28):     <body bgcolor="#E0E7F1">\n
+Action.c(28):     <style>\n
+Action.c(28):     blockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(28):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(28):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(28):     small {font-family: tahoma; font-size : 8pt}\n
+Action.c(28):     </style>\n
+Action.c(28):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+Action.c(28):     <input type="hidden" name="userSession" value="129649.319967598zzziiDzpiQfiDDDDtAAVDpAcVDH
+Action.c(28):     f"/>\n
+Action.c(28):     <table border="0"><tr><td>&nbsp;</td>\n
+Action.c(28):     <td>&nbsp;</td></tr>\n
+Action.c(28):     <tr><td>&nbsp;</td>\n
+Action.c(28):     <td>&nbsp;</td></tr>\n
+Action.c(28):     <tr><td>&nbsp;</td>\n
+Action.c(28):     <td><small>&nbsp;Username</small></td></tr>\n
+Action.c(28):     <tr><td>&nbsp;</td>\n
+Action.c(28):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(28):     <tr><td>&nbsp;</td>\n
+Action.c(28):     <td><small>&nbsp;Password</small></td>\n
+Action.c(28):     <tr><td>&nbsp;</td>\n
+Action.c(28):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(28):     <tr><td>&nbsp;</td>\n
+Action.c(28):     <td>&nbsp;</td></tr>\n
+Action.c(28):     <tr><td>&nbsp;</td>\n
+Action.c(28):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+Action.c(28):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+Action.c(28):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+Action.c(28):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+Action.c(28):     </form>\n
+Action.c(28):     \n
+Action.c(28):     </body>\n
+Action.c(28):     </html>\n
+Action.c(28): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(28): t=396ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+Action.c(28):     0\r\n
+Action.c(28):     \r\n
+Action.c(28): t=398ms: 297-byte response headers for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
+Action.c(28):     HTTP/1.1 200 OK\r\n
+Action.c(28):     Date: Sat, 19 Sep 2020 13:07:35 GMT\r\n
+Action.c(28):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(28):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
+Action.c(28):     ETag: "800000006c8d7-2a7-4b654c052c2c0"\r\n
+Action.c(28):     Accept-Ranges: bytes\r\n
+Action.c(28):     Content-Length: 679\r\n
+Action.c(28):     Keep-Alive: timeout=5, max=98\r\n
+Action.c(28):     Connection: Keep-Alive\r\n
+Action.c(28):     Content-Type: image/gif\r\n
+Action.c(28):     \r\n
+Action.c(28): t=399ms: 679-byte response body for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
+Action.c(28): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
+Action.c(28): web_url("WebTours") was successful, 10080 body bytes, 2376 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "gotosite" ended with a "Pass" status (Duration: 0.3431 Wasted Time: 0.0866).
+Action.c(42): Notify: Transaction "signup" started.
+Action.c(44): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(44): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(47): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(47): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(47): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(49): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(49): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(49): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(51): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(51): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(54): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(54): lr_think_time: 5.00 seconds (recorded think time was 17.00 seconds).
+Action.c(56): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(56): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(60): web_url("sign up now") started  	[MsgId: MMSG-26355]
+Action.c(60): t=5636ms: 229-byte response headers for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(60):     HTTP/1.1 200 OK\r\n
+Action.c(60):     Date: Sat, 19 Sep 2020 13:07:40 GMT\r\n
+Action.c(60):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(60):     Expires: 5s\r\n
+Action.c(60):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(60):     Connection: Keep-Alive\r\n
+Action.c(60):     Transfer-Encoding: chunked\r\n
+Action.c(60):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(60):     \r\n
+Action.c(60): t=5637ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(60):     97d\r\n
+Action.c(60): t=5637ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(60):     \r\n
+Action.c(60): t=5638ms: 2429-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(60):     <!DOCTYPE html\n
+Action.c(60):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(60):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(60):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(60):     <head>\n
+Action.c(60):     <title>User Information</title>\n
+Action.c(60):     <script src="/WebTours/profileValidate.js" type="text/JavaScript"></script>\n
+Action.c(60):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(60):     </head>\n
+Action.c(60):     <body bgcolor="#E0E7F1">\n
+Action.c(60):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
+Action.c(60):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
+Action.c(60):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
+Action.c(60):     }</style><BR/><center><H1><b><font color="#003366">Customer Profile</font></b></H1></cente
+Action.c(60):     r><blockquote><tr><td><B>First time registering? Please complete the form below.</B><BR/>P
+Action.c(60):     lease choose a username and password combination for your account.<BR/>We'd also like some
+Action.c(60):      additional contact information for yourself. We'll use it as default shipping and billing
+Action.c(60):      information when making all your travel arrangements.<P><tr><td align=center><form method
+Action.c(60):     ="post" action="login.pl" enctype="application/x-www-form-urlencoded" target="info" onsubm
+Action.c(60):     it>\n
+Action.c(60):     <table><tr><td align="left"><blockquote>Username : </td> <td align="left"><input type="tex
+Action.c(60):     t" name="username"  size="20" /></td></tr> <tr><td align="left"><blockquote>Password : </t
+Action.c(60):     d> <td align="left"><input type="password" name="password"  size="20" /></td></tr> <tr><td
+Action.c(60):      align="left"><blockquote>Confirm : </td> <td align="left"><input type="password" name="pa
+Action.c(60):     sswordConfirm"  size="20" /></td></tr> <tr><td> </td></tr> <tr><td align="left"><blockquot
+Action.c(60):     e>First Name : </td> <td align="left"><input type="text" name="firstName"  size="20" /></t
+Action.c(60):     d></tr> <tr><td align="left"><blockquote>Last Name : </td> <td align="left"><input type="t
+Action.c(60):     ext" name="lastName"  size="20" /></td></tr> <tr><td align="left"><blockquote>Street Addre
+Action.c(60):     ss : </td> <td align="left"><input type="text" name="address1"  size="30" /></td></tr> <tr
+Action.c(60):     ><td align="left"><blockquote>City/State/Zip : </td> <td align="left"><input type="text" n
+Action.c(60):     ame="address2"  size="30" /></td></tr> <tr><td align="left">&nbsp;</td> <td align="right">
+Action.c(60):     &nbsp;</td></tr> <tr><td align="center" colspan="2"><input type="image" name="register" sr
+Action.c(60):     c="/WebTours/images/button_next.gif" border="0" /></td></tr></table></form></table></block
+Action.c(60):     quote>\n
+Action.c(60):     </body>\n
+Action.c(60):     </html>\n
+Action.c(60): Found resource "http://localhost:1080/WebTours/profileValidate.js" in HTML "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true"  	[MsgId: MMSG-26659]
+Action.c(60): Found resource "http://localhost:1080/WebTours/images/button_next.gif" in HTML "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true"  	[MsgId: MMSG-26659]
+Action.c(60): t=5641ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(60):     0\r\n
+Action.c(60):     \r\n
+Action.c(60): t=5643ms: 314-byte response headers for "http://localhost:1080/WebTours/profileValidate.js" (RelFrameId=, Internal ID=10)
+Action.c(60):     HTTP/1.1 200 OK\r\n
+Action.c(60):     Date: Sat, 19 Sep 2020 13:07:40 GMT\r\n
+Action.c(60):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(60):     Last-Modified: Sun, 22 Apr 2012 14:28:17 GMT\r\n
+Action.c(60):     ETag: "400000006c8ec-2c18-4be45551fa240"\r\n
+Action.c(60):     Accept-Ranges: bytes\r\n
+Action.c(60):     Content-Length: 11288\r\n
+Action.c(60):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(60):     Connection: Keep-Alive\r\n
+Action.c(60):     Content-Type: application/javascript\r\n
+Action.c(60):     \r\n
+Action.c(60): t=5644ms: 11288-byte response body for "http://localhost:1080/WebTours/profileValidate.js" (RelFrameId=, Internal ID=10)
+Action.c(60):     // check for IE3\n
+Action.c(60):     var isIE3 = (navigator.appVersion.indexOf('MSIE 3') != -1);\n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     /***************************************************************\n
+Action.c(60):     ** define and instantiate validation objects\n
+Action.c(60):     ** the validation object accepts the following parameters:\n
+Action.c(60):     **\n
+Action.c(60):     **   realName: name used in the alerts (same as label on the page)\n
+Action.c(60):     **\n
+Action.c(60):     **   formEltName: this must be the name of the corresponding\n
+Action.c(60):     **       HTML form element; make it the same as the object name\n
+Action.c(60):     **\n
+Action.c(60):     **   eltType: element type (we have to create this since IE3\n
+Action.c(60):     **       doesn't support the type property for for elements)\n
+Action.c(60):     **     text\n
+Action.c(60):     **     textarea\n
+Action.c(60):     **     checkbox\n
+Action.c(60):     **     radio\n
+Action.c(60):     **     select\n
+Action.c(60):     **\n
+Action.c(60):     **   uptoSnuff: function call that's evaluated during validation check\n
+Action.c(60):     **     isText(str)\n
+Action.c(60):     **     isSelect(formObj)\n
+Action.c(60):     **     isRadio(formObj)\n
+Action.c(60):     **     isCheck(formObj, form, [index of first checkbox in group],\n
+Action.c(60):     **         [number of checkboxes])\n
+Action.c(60):     **     isEmail(str)\n
+Action.c(60):     **     isState(str)\n
+Action.c(60):     **     isZipCode(str)\n
+Action.c(60):     **     isPhoneNum(str)\n
+Action.c(60):     **     isDate(str)\n
+Action.c(60):     **\n
+Action.c(60):     **   format: text representation of required format;\n
+Action.c(60):     **       pass 'null' if no required format;\n
+Action.c(60):     **       used in alert as an aid to user\n
+Action.c(60):     ***************************************************************/\n
+Action.c(60):     \n
+Action.c(60):     // object definition\n
+Action.c(60):     function validation(realName, formEltName, eltType, upToSnuff, format) {\n
+Action.c(60):       this.realName = realName;\n
+Action.c(60):       this.formEltName = formEltName;\n
+Action.c(60):       this.eltType = eltType;\n
+Action.c(60):       this.upToSnuff = upToSnuff;\n
+Action.c(60):       this.format = format;\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     /***************************************************************\n
+Action.c(60):     ** create a new object for each form element you need to validate\n
+Action.c(60):     ** for example:\n
+Action.c(60):     ** var lastName = new validation('last name', 'lastName', 'text', 'isText(str)', null);\n
+Action.c(60):     ** var phoneNum = new validation('phone number', 'phoneNum', 'text', 'isPhoneNum(str)', 'x
+Action.c(60):     xx-xxx-xxxx');\n
+Action.c(60):     ** var reason = new validation('reason for reading this', 'reason', 'checkbox', 'isCheck(f
+Action.c(60):     ormObj, form, 14, 3)', null);\n
+Action.c(60):     ***************************************************************/\n
+Action.c(60):     // create objects here:\n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     var username = new validation('a username', 'username', 'text', 'isText(str)', null);\n
+Action.c(60):     var password = new validation('a password', 'password', 'text', 'isText(str)', null);\n
+Action.c(60):     var passwordC = new validation('a password confirmation', 'passwordConfirm', 'text', 'isTe
+Action.c(60):     xt(str)', null);\n
+Action.c(60):     var firstN = new validation('your first name', 'firstName', 'text', 'isText(str)', null);\n
+Action.c(60):     var lastN = new validation('your last name', 'lastName', 'text', 'isText(str)', null);\n
+Action.c(60):     var address = new validation('your address', 'address1', 'text', 'isText(str)', null);\n
+Action.c(60):     var csz = new validation('your City/State/Zip', 'address2', 'text', 'isText(str)', null);\n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     /***************************************************************\n
+Action.c(60):     ** Define the elts array:\n
+Action.c(60):     ** Add a new item to the array for each object you create above\n
+Action.c(60):     ** Make sure the value of the array element is the same as\n
+Action.c(60):     ** the name of the object, and that the array elements are listed\n
+Action.c(60):     ** in the same order the corresponding objects appear in the form\n
+Action.c(60):     ** (it's more clear to the user that way)\n
+Action.c(60):     ** for example:\n
+Action.c(60):     ** var elts = new Array(lastName, phoneNum, reason)\n
+Action.c(60):     ***************************************************************/\n
+Action.c(60):     var elts = new Array(username, password, passwordC, firstN, lastN, address, csz);\n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     /***************************************************************\n
+Action.c(60):     ** The main function keeps track of which fields the user missed\n
+Action.c(60):     ** or filled in incorrectly, and alerts the user so they can go\n
+Action.c(60):     ** back and fix what's wrong.\n
+Action.c(60):     ** Set allAtOnce to true if you want this "validation help" to\n
+Action.c(60):     ** alert the user to all mistakes at once; set it to false if\n
+Action.c(60):     ** you want it to show one mistake at a time\n
+Action.c(60):     ***************************************************************/\n
+Action.c(60):     var allAtOnce = true;\n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     /***************************************************************\n
+Action.c(60):     ** change text for alerts here\n
+Action.c(60):     ** unspecified field (text): "Please include [field name]."\n
+Action.c(60):     ** unspecified field (other): "Please choose [field name]."\n
+Action.c(60):     ** invalid text field entries: "[field value] is an invalid [field name]!"\n
+Action.c(60):     ** help with format: "Use this format: "\n
+Action.c(60):     ***************************************************************/\n
+Action.c(60):     var beginRequestAlertForText = "Please include ";\n
+Action.c(60):     var beginRequestAlertGeneric = "Please choose ";\n
+Action.c(60):     var endRequestAlert = ".";\n
+Action.c(60):     var beginInvalidAlert = " is an invalid ";\n
+Action.c(60):     var endInvalidAlert = "!";\n
+Action.c(60):     var beginFormatAlert = "  Use this format: ";\n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     /***************************************************************\n
+Action.c(60):     ** these functions validate the string or form object passed in,\n
+Action.c(60):     ** and return true or false based on whether the test succeeds or fails\n
+Action.c(60):     **\n
+Action.c(60):     ** validate existence of input\n
+Action.c(60):     **   isText(str): verifies text input or textarea is not empty\n
+Action.c(60):     **   isSelect(formObj): verifies item from a select menu is chosen\n
+Action.c(60):     **   isRadio(formObj): verifies one of a group of radio buttons is chosen\n
+Action.c(60):     **   isCheck(formObj, form, [begin], [num]): verifies at least one\n
+Action.c(60):     **       of a group of checkboxes is checked\n
+Action.c(60):     **     for [begin], fill in the index number in the elements array\n
+Action.c(60):     **         of the first checkbox (remember to start counting from zero)\n
+Action.c(60):     **     for [num], fill in the number of checkboxes in the group\n
+Action.c(60):     **\n
+Action.c(60):     ** validate text in text input or textarea matches pattern\n
+Action.c(60):     **   isEmail(str): verifies email address (contains "@" and ".")\n
+Action.c(60):     **   isState(str): verifies U.S. State Code\n
+Action.c(60):     **   isZipCode(str): verifies zip code of form xxxxx or xxxxx-xxxx\n
+Action.c(60):     **   isPhoneNum(str): verifies phone number of form xxx-xxx-xxxx\n
+Action.c(60):     **   isDate(str): verifies date of form mm/dd/yyyy\n
+Action.c(60):     ***************************************************************/\n
+Action.c(60):     \n
+Action.c(60):     function isText(str) {\n
+Action.c(60):       return (str != "");\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isSelect(formObj) {\n
+Action.c(60):       return (formObj.selectedIndex != 0);\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isRadio(formObj) {\n
+Action.c(60):       for (j=0; j<formObj.length; j++) {\n
+Action.c(60):         if (formObj[j].checked) {\n
+Action.c(60):           return true;\n
+Action.c(60):         }\n
+Action.c(60):       }\n
+Action.c(60):       return false;\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isCheck(formObj, form, begin, num) {\n
+Action.c(60):       for (j=begin; j<begin+num; j++) {\n
+Action.c(60):         if (form.elements[j].checked) {\n
+Action.c(60):           return true;\n
+Action.c(60):         }\n
+Action.c(60):       }\n
+Action.c(60):       return false;\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isEmail(str) {\n
+Action.c(60):       return ((str != "") && (str.indexOf("@") != -1) && (str.indexOf(".") != -1));\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isState(str) {\n
+Action.c(60):       str = str.toUpperCase();\n
+Action.c(60):       return ( (str == "AK") || (str == "AL") || (str == "AR") || (str == "AZ") || (str == "CA
+Action.c(60):     ") || (str == "CO") || (str == "CT") || (str == "DC") || (str == "DE") || (str == "FL") ||
+Action.c(60):      (str == "GA") || (str == "HI") || (str == "IA") || (str == "ID") || (str == "IL") || (str
+Action.c(60):      == "IN") || (str == "KS") || (str == "KY") || (str == "LA") || (str == "MA") || (str == "
+Action.c(60):     MD") || (str == "ME") || (str == "MI") || (str == "MN") || (str == "MO") || (str == "MS") 
+Action.c(60):     || (str == "MT") || (str == "NB") || (str == "NC") || (str == "ND") || (str == "NH") || (s
+Action.c(60):     tr == "NJ") || (str == "NM") || (str == "NV") || (str == "NY") || (str == "OH") || (str ==
+Action.c(60):      "OK") || (str == "OR") || (str == "PA") || (str == "RI") || (str == "SC") || (str == "SD"
+Action.c(60):     ) || (str == "TN") || (str == "TX") || (str == "UT") || (str == "VA") || (str == "VT") || 
+Action.c(60):     (str == "WA") || (str == "WI") || (str == "WV") || (str == "WY") );\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isZipCode(str) {\n
+Action.c(60):       var l = str.length;\n
+Action.c(60):       if ((l != 5) && (l != 10)) { return false }\n
+Action.c(60):       for (j=0; j<l; j++) {\n
+Action.c(60):         if ((l == 10) && (j == 5)) {\n
+Action.c(60):           if (str.charAt(j) != "-") { return false }\n
+Action.c(60):         } else {\n
+Action.c(60):           if ((str.charAt(j) < "0") || (str.charAt(j) > "9")) { return false }\n
+Action.c(60):         }\n
+Action.c(60):       }\n
+Action.c(60):       return true;\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isPhoneNum(str) {\n
+Action.c(60):       if (str.length != 12) { return false }\n
+Action.c(60):       for (j=0; j<str.length; j++) {\n
+Action.c(60):         if ((j == 3) || (j == 7)) {\n
+Action.c(60):           if (str.charAt(j) != "-") { return false }\n
+Action.c(60):         } else {\n
+Action.c(60):           if ((str.charAt(j) < "0") || (str.charAt(j) > "9")) { return false }\n
+Action.c(60):         }\n
+Action.c(60):       }\n
+Action.c(60):       return true;\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     function isDate(str) {\n
+Action.c(60):       if (str.length != 10) { return false }\n
+Action.c(60):     \n
+Action.c(60):       for (j=0; j<str.length; j++) {\n
+Action.c(60):         if ((j == 2) || (j == 5)) {\n
+Action.c(60):           if (str.charAt(j) != "/") { return false }\n
+Action.c(60):         } else {\n
+Action.c(60):           if ((str.charAt(j) < "0") || (str.charAt(j) > "9")) { return false }\n
+Action.c(60):         }\n
+Action.c(60):       }\n
+Action.c(60):     \n
+Action.c(60):       var month = str.charAt(0) == "0" ? parseInt(str.substring(1,2)) : parseInt(str.substring
+Action.c(60):     (0,2));\n
+Action.c(60):       var day = str.charAt(3) == "0" ? parseInt(str.substring(4,5)) : parseInt(str.substring(3
+Action.c(60):     ,5));\n
+Action.c(60):       var begin = str.charAt(6) == "0" ? (str.charAt(7) == "0" ? (str.charAt(8) == "0" ? 9 : 8
+Action.c(60):     ) : 7) : 6;\n
+Action.c(60):       var year = parseInt(str.substring(begin, 10));\n
+Action.c(60):     \n
+Action.c(60):       if (day == 0) { return false }\n
+Action.c(60):       if (month == 0 || month > 12) { return false }\n
+Action.c(60):       if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 ||
+Action.c(60):      month == 12) {\n
+Action.c(60):         if (day > 31) { return false }\n
+Action.c(60):       } else {\n
+Action.c(60):         if (month == 4 || month == 6 || month == 9 || month == 11) {\n
+Action.c(60):           if (day > 30) { return false }\n
+Action.c(60):         } else {\n
+Action.c(60):           if (year%4 != 0) {\n
+Action.c(60):             if (day > 28) { return false }\n
+Action.c(60):           } else {\n
+Action.c(60):             if (day > 29) { return false }\n
+Action.c(60):           }\n
+Action.c(60):         }\n
+Action.c(60):       }\n
+Action.c(60):       return true;\n
+Action.c(60):     }\n
+Action.c(60):     \n
+Action.c(60):     \n
+Action.c(60):     /***************************************************************\n
+Action.c(60):     ** The validateForm() function validates the form elements\n
+Action.c(60):     ** previously defined as validation objects and as members of\n
+Action.c(60):     ** the elts array. We loop through the elts array, testing each\n
+Action.c(60):     ** element in turn, and alerting the user when they've missed\n
+Action.c(60):     ** a required field\n
+Action.c(60):     ***************************************************************/\n
+Action.c(60):     \n
+Action.c(60):     function validateForm(form) {\n
+Action.c(60):       var formEltName = "";\n
+Action.c(60):       var formObj = "";\n
+Action.c(60):       var str = "";\n
+Action.c(60):       var realName = "";\n
+Action.c(60):       var alertText = "";\n
+Action.c(60):       var firstMissingElt = null;\n
+Action.c(60):       var hardReturn = "\\r\\n";\n
+Action.c(60):     \n
+Action.c(60):       for (i=0; i<elts.length; i++) {\n
+Action.c(60):         formEltName = elts[i].formEltName;\n
+Action.c(60):         formObj = eval("form." + formEltName);\n
+Action.c(60):         realName = elts[i].realName;\n
+Action.c(60):     \n
+Action.c(60):         if (elts[i].eltType == "text") {\n
+Action.c(60):           str = formObj.value;\n
+Action.c(60):     \n
+Action.c(60):           if (eval(elts[i].upToSnuff)) continue;\n
+Action.c(60):     \n
+Action.c(60):           if (str == "") {\n
+Action.c(60):             if (allAtOnce) {\n
+Action.c(60):               alertText += beginRequestAlertForText + realName + endRequestAlert + hardReturn;
+Action.c(60):     \n
+Action.c(60):               if (firstMissingElt == null) {firstMissingElt = formObj};\n
+Action.c(60):             } else {\n
+Action.c(60):               alertText = beginRequestAlertForText + realName + endRequestAlert + hardReturn;\n
+Action.c(60):               alert(alertText);\n
+Action.c(60):             }\n
+Action.c(60):           } else {\n
+Action.c(60):             if (allAtOnce) {\n
+Action.c(60):               alertText += str + beginInvalidAlert + realName + endInvalidAlert + hardReturn;\n
+Action.c(60):             } else {\n
+Action.c(60):               alertText = str + beginInvalidAlert + realName + endInvalidAlert + hardReturn;\n
+Action.c(60):             }\n
+Action.c(60):             if (elts[i].format != null) {\n
+Action.c(60):               alertText += beginFormatAlert + elts[i].format + hardReturn;\n
+Action.c(60):             }\n
+Action.c(60):             if (allAtOnce) {\n
+Action.c(60):               if (firstMissingElt == null) {firstMissingElt = formObj};\n
+Action.c(60):             } else {\n
+Action.c(60):               alert(alertText);\n
+Action.c(60):             }\n
+Action.c(60):           }\n
+Action.c(60):         } else {\n
+Action.c(60):           if (eval(elts[i].upToSnuff)) continue;\n
+Action.c(60):           if (allAtOnce) {\n
+Action.c(60):             alertText += beginRequestAlertGeneric + realName + endRequestAlert + hardReturn;\n
+Action.c(60):             if (firstMissingElt == null) {firstMissingElt = formObj};\n
+Action.c(60):           } else {\n
+Action.c(60):             alertText = beginRequestAlertGeneric + realName + endRequestAlert + hardReturn;\n
+Action.c(60):             alert(alertText);\n
+Action.c(60):           }\n
+Action.c(60):         }\n
+Action.c(60):         if (!isIE3) {\n
+Action.c(60):           var goToObj = (allAtOnce) ? firstMissingElt : formObj;\n
+Action.c(60):           if (goToObj.select) goToObj.select();\n
+Action.c(60):           if (goToObj.focus) goToObj.focus();\n
+Action.c(60):         }\n
+Action.c(60):         if (!allAtOnce) {return false};\n
+Action.c(60):       }\n
+Action.c(60):       if (allAtOnce) {\n
+Action.c(60):         if (alertText != "") {\n
+Action.c(60):           alert(alertText);\n
+Action.c(60):           return false;\n
+Action.c(60):         }\n
+Action.c(60):       } \n
+Action.c(60):     //  alert("I am valid!"); //remove this line when you use the code\n
+Action.c(60):       return true; //change this to return true to make the form submit\n
+Action.c(60):     }\n
+Action.c(60): t=5660ms: 298-byte response headers for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=11)
+Action.c(60):     HTTP/1.1 200 OK\r\n
+Action.c(60):     Date: Sat, 19 Sep 2020 13:07:40 GMT\r\n
+Action.c(60):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(60):     Last-Modified: Thu, 12 Jan 2012 13:30:27 GMT\r\n
+Action.c(60):     ETag: "700000006c8b7-2f6-4b654c052c2c0"\r\n
+Action.c(60):     Accept-Ranges: bytes\r\n
+Action.c(60):     Content-Length: 758\r\n
+Action.c(60):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(60):     Connection: Keep-Alive\r\n
+Action.c(60):     Content-Type: image/gif\r\n
+Action.c(60):     \r\n
+Action.c(60): t=5661ms: 758-byte response body for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=11)
+Action.c(60): Registered web_reg_find successful for "Text=Customer Profile" (count=1)  	[MsgId: MMSG-26364]
+Action.c(60): web_url("sign up now") was successful, 14475 body bytes, 841 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(70): Notify: Transaction "signup" ended with a "Pass" status (Duration: 5,1774 Think Time: 4,9998 Wasted Time: 0,0047).
+Action.c(72): Notify: Transaction "fill_user_info" started.
+Action.c(74): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(74): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(77): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(77): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(80): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(80): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(83): Think time - Waiting 5,00 seconds (according to limit).
+Action.c(83): lr_think_time: 5,00 seconds (recorded think time was 93,00 seconds).
+Action.c(83): Notify: Transaction "fill_user_info" ended with a "Stop" status (Duration: 2,3486).
+Action.c(83): Notify: Transaction "UC5_SignUpAndCheckTicketsPrice" ended with a "Stop" status (Duration: 7,8750 Think Time: 4,9998 Wasted Time: 0,0912).
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 3612), ended OK."

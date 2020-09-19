@@ -1,0 +1,92 @@
+Virtual User Script started at: 19.09.2020 16:07:18
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 10; build 793 (ноя 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\1пк\Desktop\CreateNewUserAndCheckTicketCostVugenScript\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Transaction "UC5_SignUpAndCheckTicketsPrice" started.
+Action.c(5): Notify: Transaction "gotosite" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(24): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(28): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(28): Error -27792: Failed to connect to server "localhost:1080": [10061] Connection refused  	[MsgId: MERR-27792]
+Action.c(28): Error -26366: "Text=Welcome to the Web Tours site" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(28): Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively.  	[MsgId: MERR-26374]
+Action.c(28): web_url("WebTours") highest severity level was "ERROR", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+Action.c(28): Notify: Transaction "gotosite" ended with a "Fail" status (Duration: 2.1532 Wasted Time: 0.0650).
+Action.c(28): Notify: Transaction "gotosite" has 3 error message(s).
+Action.c(28): Notify: The 1st error message associated with transaction "gotosite" is "Error -27792: Failed to connect to server "localhost:1080": [10061] Connection refused"
+Action.c(28): Notify: The 2nd error message associated with transaction "gotosite" is "Error -26366: "Text=Welcome to the Web Tours site" not found for web_reg_find"
+Action.c(28): Notify: The 3rd error message associated with transaction "gotosite" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively."
+Action.c(28): Notify: Transaction "UC5_SignUpAndCheckTicketsPrice" ended with a "Fail" status (Duration: 2.1548 Wasted Time: 0.0650).
+Action.c(28): Notify: Transaction "UC5_SignUpAndCheckTicketsPrice" has 3 error message(s).
+Action.c(28): Notify: The 1st error message associated with transaction "UC5_SignUpAndCheckTicketsPrice" is "Error -27792: Failed to connect to server "localhost:1080": [10061] Connection refused"
+Action.c(28): Notify: The 2nd error message associated with transaction "UC5_SignUpAndCheckTicketsPrice" is "Error -26366: "Text=Welcome to the Web Tours site" not found for web_reg_find"
+Action.c(28): Notify: The 3rd error message associated with transaction "UC5_SignUpAndCheckTicketsPrice" is "Error -26374: The above "not found" error(s) may be explained by header and body byte counts being 0 and 0, respectively."
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Notify: Next row for parameter firstName = 2 [table  = firstName].
+Notify: Getting new value for parameter 'firstName': table = 'login.dat' column = '2' row = '2'.
+Notify: Next row for parameter adress2 = 2 [table  = adress2].
+Notify: Getting new value for parameter 'adress2': table = 'login.dat' column = '5' row = '2'.
+Notify: Next row for parameter adress1 = 2 [table  = adress1].
+Notify: Getting new value for parameter 'adress1': table = 'login.dat' column = '4' row = '2'.
+Notify: Next row for parameter arrive = 2 [table  = arrive].
+Notify: Getting new value for parameter 'arrive': table = 'departandarrive.dat' column = '1' row = '2'.
+Notify: Next row for parameter seatPref = 3 [table  = seatPref].
+Notify: Getting new value for parameter 'seatPref': table = 'seatPref.dat' column = '0' row = '3'.
+Notify: Next row for parameter seatType = 2 [table  = seatType].
+Notify: Getting new value for parameter 'seatType': table = 'seatType.dat' column = '0' row = '2'.
+Notify: Next row for parameter depart = 2 [table  = depart].
+Notify: Getting new value for parameter 'depart': table = 'departandarrive.dat' column = '0' row = '2'.
+Notify: Next row for parameter login = 2 [table  = login].
+Notify: Getting new value for parameter 'login': table = 'login.dat' column = '1' row = '2'.
+Notify: Next row for parameter password = 2 [table  = password].
+Notify: Getting new value for parameter 'password': table = 'login.dat' column = '0' row = '2'.
+Notify: Next row for parameter lastName = 2 [table  = lastName].
+Notify: Getting new value for parameter 'lastName': table = 'login.dat' column = '3' row = '2'.
+Notify: Next row for parameter advanceDiscount = 2 [table  = advanceDiscount].
+Notify: Getting new value for parameter 'advanceDiscount': table = 'login.dat' column = '8' row = '2'.
+Starting action Action.
+Action.c(3): Notify: Transaction "UC5_SignUpAndCheckTicketsPrice" started.
+Action.c(5): Notify: Transaction "gotosite" started.
+Action.c(7): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(7): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(9): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(9): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(12): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(15): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(15): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(18): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(18): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(21): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(21): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(24): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(24): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(28): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(28): Notify: Transaction "gotosite" ended with a "Stop" status (Duration: 1.0387 Wasted Time: 0.0003).
+Action.c(28): Notify: Transaction "UC5_SignUpAndCheckTicketsPrice" ended with a "Stop" status (Duration: 1.0403 Wasted Time: 0.0003).
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
